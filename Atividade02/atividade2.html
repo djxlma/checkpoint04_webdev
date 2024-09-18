@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade2.css">
+    <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <ul id="lista-produtos"></ul>
+    <div>
+        <p>ID: 1</p>
+        <p>Nome: Camiseta</p>
+        <p>Valor: R$29.99</p>
+        <button onclick="adicionarProduto(1, 'Camiseta', 29.99, 1)">Adicionar ao Carrinho</button>
+    </div>
+    <div>
+        <p>ID: 2</p>
+        <p>Nome: Calça Jeans</p>
+        <p>Valor: R$99.90</p>
+        <button onclick="adicionarProduto(2, 'Calça Jeans', 99.90, 1)">Adicionar ao Carrinho</button>
+    </div>
+    <div>
+        <p>ID: 3</p>
+        <p>Nome: Tênis</p>
+        <p>Valor: R$149.90</p>
+        <button onclick="adicionarProduto(3, 'Tênis', 149.90, 1)">Adicionar ao Carrinho</button>
+    </div>
+
+    <h2>Outra forma de adicionar produto ao carrinho!</h2>
+    <form id="form-adicionar-produto">
+        <label for="produto-id">ID:</label>
+        <input type="number" id="produto-id" required><br>
+        <label for="produto-nome">Nome:</label>
+        <input type="text" id="produto-nome" required><br>
+        <label for="produto-valor">Valor:</label>
+        <input type="number" id="produto-valor" step="0.01" required><br>
+        <label for="produto-quantidade">Quantidade:</label>
+        <input type="number" id="produto-quantidade" required><br>
+        <button type="submit">Adicionar ao Carrinho</button>
+    </form>
+
+    <h3 id="valor-total">Valor Total: R$ 0.00</h3>
+
+    <script src="atividade2.js"></script>
+</body>
+</html>
